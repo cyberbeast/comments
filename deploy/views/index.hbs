@@ -1,0 +1,16 @@
+<!--Insert HTML CODE HERE-->
+
+<h1>Comments</h1>
+
+{{#each message}}
+    <ul>
+        <li>{{this.name}} said... {{this.comment}}</li> 
+    </ul>
+    
+{{/each}}
+
+<form method="post" action="/">
+  <label>Name</label><input type="text" label="name" name="name">
+  <label>Comment</label><input type="text" label="comment" name="comment">
+  <input type="submit">
+</form>
